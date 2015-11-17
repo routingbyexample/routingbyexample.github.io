@@ -1,0 +1,13 @@
+/************************************************************
+* GLOBAL HELPERS
+*************************************************************/
+
+// Put mdash before content
+.mdash-before:before {
+  content: '\2014';
+}
+
+// Helper for responsive images
+.full-width{
+  width: 100%;
+}

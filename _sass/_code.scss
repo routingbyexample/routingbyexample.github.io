@@ -1,0 +1,57 @@
+/************************************************************
+* CODE FORMATTING
+*************************************************************/
+
+figure{
+  >pre{
+    padding: 20px;
+    line-height: 22px;
+  }
+}
+
+pre,
+code {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,0.05);
+  font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+}
+
+pre{
+  code{
+    background: transparent;
+  }
+}
+
+code{
+  pre{
+    background: transparent;
+  }
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 15px;
+  overflow-x: scroll;
+  > code {
+    border: 0;
+    padding: 0;
+  }
+}
+
+// Styles for blocks with line numbers
+code{
+  table{
+    pre{
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+    td.code{
+      padding-left: 15px;
+    }
+  }
+}

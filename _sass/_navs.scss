@@ -1,0 +1,41 @@
+/************************************************************
+* NAVIGATION
+*************************************************************/
+
+.rbe-global-nav{
+
+}
+
+.rbe-global-nav{
+  ul{
+    margin: 0 0 30px -30px;
+    li{
+      display: inline-block;
+      margin: 0 0 0 30px;
+      a{
+        display: inline-block;
+        text-decoration: none;
+        &.router-link-active, &.active{
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.rbe-site-nav{
+  ul{
+    margin: 0 0 30px -30px;
+    li{
+      display: inline-block;
+      margin: 0 0 0 30px;
+      a{
+        display: inline-block;
+        text-decoration: none;
+        &.router-link-active, &.active{
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
