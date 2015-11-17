@@ -1,9 +1,12 @@
+---
+body_class: rbe-body--default
+---
 <!DOCTYPE html>
 <html>
 
   {% include head.html %}
 
-  <body class="{{ page.body_class }}">
+  <body class="{% if page.body_class %}{{ page.body_class }}{% else %}{{ layout.body_class }}{% endif %}">
 
     {% include global-header.html %}
     {% include site-header.html %}
