@@ -1,0 +1,75 @@
+---
+layout: default
+body_class: rbe-body--styleguide
+---
+
+<section class="rbe-section rbe-section--styleguide">
+    <div class="rbe-section__headline">Headings</div>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+</section>
+
+<section class="rbe-section rbe-section--styleguide">
+    <div class="rbe-section__headline">Paragraphs</div>
+    <p>A falsis, historia lotus brodium. Est clemens fuga, cesaris. <a href="#">Ecce</a>, castor! Abnobas experimentum! Ubi est primus humani generis? Est clemens advena, cesaris. Cum abactus unda, omnes demissioes perdere fortis, camerarius rectores. Eheu, onus!</p>
+    <p>Classiss cadunt! Pulchritudines unda in ostravia! Nunquam transferre orexis. Cantare sensim ducunt ad secundus lacta. Nobilis usus foris convertams navis est. Ubi est rusticus bubo? Indictio de bi-color lacta, experientia lanista!</p>
+</section>
+
+<section class="rbe-section rbe-section--styleguide">
+    <div class="rbe-section__headline">Navs</div>
+    <p><code>.rbe-global-nav</code></p>
+    <nav class="rbe-global-nav">
+        <ul>
+            <li><a href="#">Normal</a></li>
+            <li><a href="#">Normal</a></li>
+            <li><a href="#" class="router-link-active">Active</a></li>
+            <li><a href="#">Normal</a></li>
+        </ul>
+    </nav>
+    <p><code>.rbe-site-nav</code></p>
+    <nav class="rbe-site-nav">
+        <ul>
+            <li><a href="#">Normal</a></li>
+            <li><a href="#">Normal</a></li>
+            <li><a href="#" class="router-link-active">Active</a></li>
+            <li><a href="#">Normal</a></li>
+        </ul>
+    </nav>
+</section>
+
+<section class="rbe-section rbe-section--styleguide">
+    <div class="rbe-section__headline">Figures</div>
+    <p>Use the <code>rbe-figure--overlay-caption</code> modifier to show text over a shadow to make it more readable:</p>
+    <figure class="rbe-figure rbe-figure--overlay-caption">
+        <img src="http://lorempixel.com/800/300/" alt="">
+        <figcaption>
+            <h1>Figure title</h1>
+            <h2>Figure subtitle</h2>
+        </figcaption>
+    </figure>
+</section>
+
+<section class="rbe-section rbe-section--styleguide">
+    <div class="rbe-section__headline">Code</div>
+    <p>You can write <code>inline code</code> and code blocks with line numbers:</p>
+{% highlight javascript linenos %}
+function sayHello(){
+  console.log('Hi there');
+}
+{% endhighlight %}
+    <p>and without line numbers:</p>
+{% highlight javascript %}
+function sayHello(){
+  console.log('Hi there');
+}
+{% endhighlight %}
+</section>
+
+<section class="rbe-section rbe-section--styleguide">
+    <div class="rbe-section__headline">Embedding plunks</div>
+    <iframe class="rbe-iframe--plunk" src="http://embed.plnkr.co/XWBh28hbWvs1PoY0uBUm/preview"></iframe>
+</section>
