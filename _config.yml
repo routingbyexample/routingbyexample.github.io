@@ -2,7 +2,7 @@
 title: Routing by example
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Practical and real world examples of our routing is done in Angular 2
+  Practical and real world examples of how routing is done in Angular 2
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://routingbyexample.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
