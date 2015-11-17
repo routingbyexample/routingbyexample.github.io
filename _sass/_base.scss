@@ -14,7 +14,7 @@ body{
   font-weight: 300;
 }
 
-.rbe-body--styleguide{
+.rbe-body--default{
   main {
     max-width: 700px;
     margin: 0 auto;
@@ -35,11 +35,12 @@ ul, ol, dl, figure{
 }
 
 a{
+  display: inline-block;
   color: black;
   font-weight: 400;
   text-decoration: none;
+  line-height: 1.5em;
   background: linear-gradient(black, black) no-repeat;
   background-size: 100% 1px;
   background-position: 0 1.35em;
-  display: inline-block;
 }
