@@ -1,0 +1,6 @@
+<div class="rbe-example-card">
+    <div class="rbe-example-card__date">{{ include.example.date | date: "%b %-d, %Y" }}</div>
+    <div class="rbe-example-card__title">
+        <a href="{{ post.url | prepend: include.example.baseurl }}">{{ include.example.title }}</a>
+    </div>
+</div>
