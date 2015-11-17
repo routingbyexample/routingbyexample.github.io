@@ -2,8 +2,4 @@
 layout: default
 ---
 
-<div class="rbe-example-post">
-  <div class="rbe-example-post__tile">{{ page.title }}</div>
-  <div class="rbe-example-post__meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>
-  <div class="rbe-example-post__content">{{ content }}</div>
-</div>
+{% include components/example-post/example-post.html example=page %}
