@@ -27,6 +27,12 @@
   height: 40px;
   img{
     height: 40px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    &:hover{
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
   }
   a{
     background: none;
