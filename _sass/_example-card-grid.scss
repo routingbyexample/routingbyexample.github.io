@@ -1,0 +1,9 @@
+.rbe-example-card-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rbe-example-card-grid__item{
+  flex: 0 0 45%;
+}
