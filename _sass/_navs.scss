@@ -3,18 +3,18 @@
 *************************************************************/
 
 .rbe-global-nav{
-
-}
-
-.rbe-global-nav{
   ul{
-    margin: 0 0 30px -30px;
+    margin: 0 0 0 -30px;
+    display: flex;
+    align-items: center;
     li{
-      display: inline-block;
+      display: block;
+      flex: 0 1 auto;
       margin: 0 0 0 30px;
       a{
         display: inline-block;
         text-decoration: none;
+        background-position: 0 1.8em;
         &.router-link-active, &.active{
           font-weight: 700;
         }
@@ -23,9 +23,27 @@
   }
 }
 
+.rbe-global-nav__logo{
+  height: 40px;
+  img{
+    height: 40px;
+  }
+  a{
+    background: none;
+  }
+}
+
+.rbe-global-nav__link-to-website{
+  a{
+    font-weight: 700;
+    background: none;
+  }
+}
+
 .rbe-site-nav{
   ul{
-    margin: 0 0 30px -30px;
+    margin: 0 0 60px -30px;
+    text-align: right;
     li{
       display: inline-block;
       margin: 0 0 0 30px;
