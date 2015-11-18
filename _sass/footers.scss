@@ -2,14 +2,59 @@
 * FOOTERS
 *************************************************************/
 
+.rbe-site-footer{
+  background: #151515;
+  color: white;
+  margin: 0 auto;
+  padding: 30px 15px;
+
+  h1{
+    font-size: 1.2rem;
+  }
+}
+
+.rbe-site-footer__latest-examples{
+}
+
+.rbe-site-footer__subscribe{
+  p{
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
+.rbe-site-footer-grid{
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rbe-site-footer-grid__item{
+  flex: 0 0 45%;
+}
+
 .rbe-global-footer{
   max-width: 700px;
   margin: 0 auto;
-  padding: 30px 15px;
+  padding: 15px 0;
 }
 
-.rbe-site-footer{
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 30px 15px;
+.rbe-global-footer__tagline{
+  text-align: center;
+  font-size: 14px;
+}
+
+.rbe-global-footer__links{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 -30px;
+  text-align: center;
+  >li{
+    font-size: 14px;
+    display: inline-block;
+  }
+  >li:not(:last-child):after {
+    content: '—';
+    padding: 0 8px;
+  }
 }
