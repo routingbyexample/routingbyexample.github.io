@@ -1,3 +1,4 @@
+@import "./variables";
 
 html{
   font-size: 100%;
@@ -8,10 +9,14 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
-  font-family: 'Lato', sans-serif;
-  line-height: 1.5em;
+  font-family: $rbe-font-serif;
+  line-height: 1.8em;
   color: rgba(0,0,0,0.8);
-  font-weight: 300;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $rbe-font-sans-serif;
 }
 
 .rbe-body--default{
@@ -44,4 +49,8 @@ a{
   background: linear-gradient(black, black) no-repeat;
   background-size: 100% 1px;
   background-position: 0 1.35em;
+}
+
+p+p{
+  margin-top: 2em;
 }

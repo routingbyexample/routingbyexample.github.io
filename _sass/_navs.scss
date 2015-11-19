@@ -1,10 +1,12 @@
+@import './variables';
+
 /************************************************************
 * NAVIGATION
 *************************************************************/
 
 .rbe-global-nav{
   ul{
-    margin: 0 0 0 -30px;
+    margin: 0 0 30px -30px;
     display: flex;
     align-items: center;
     li{
@@ -36,6 +38,7 @@
   }
   a{
     background: none;
+
   }
 }
 
@@ -43,6 +46,8 @@
   a{
     font-weight: 700;
     background: none;
+    font-family: $rbe-font-sans-serif;
+    font-size: 28px;
   }
 }
 
@@ -54,10 +59,15 @@
       display: inline-block;
       margin: 0 0 0 30px;
       a{
+        font-family: $rbe-font-sans-serif;
+        text-transform: uppercase;
         display: inline-block;
         text-decoration: none;
+        font-weight: 700;
+        background: none;
+        color: rgba(0,0,0,0.5);
         &.router-link-active, &.active{
-          font-weight: 700;
+          color: black;
         }
       }
     }

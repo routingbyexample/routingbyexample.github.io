@@ -1,3 +1,5 @@
+@import "./variables";
+
 /************************************************************
 * CODE FORMATTING
 *************************************************************/
@@ -14,7 +16,7 @@ code {
   font-size: 16px;
   border-radius: 3px;
   background-color: rgba(0,0,0,0.05);
-  font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+  font-family: $rbe-font-monospace;
 }
 
 pre{
