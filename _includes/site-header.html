@@ -2,10 +2,10 @@
   <nav class="rbe-site-nav">
     <ul>
       <li>
-        <a href="#" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+        <a href="#" class="{% if page.url == '/' or page.url == '' %}active{% endif %}">Home</a>
       </li>
       <li>
-        <a href="#">Examples</a>
+        <a href="#" class="{% if page.url contains '/jekyll/' %}active{% endif %}">Examples</a>
       </li>
       <li>
         <a href="#">About</a>
