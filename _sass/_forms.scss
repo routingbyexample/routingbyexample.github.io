@@ -1,0 +1,25 @@
+@import "./variables";
+
+/************************************************************
+* FORMS
+*************************************************************/
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  font-family: $rbe-font-sans-serif;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+  padding: 3px 10px;
+  outline: none;
+}
+
+input[type="submit"],
+button{
+  border: 1px solid black;
+  background: white;
+  padding: 6px 16px;
+  color: black;
+  font-family: $rbe-font-sans-serif;
+  text-transform: uppercase;
+}

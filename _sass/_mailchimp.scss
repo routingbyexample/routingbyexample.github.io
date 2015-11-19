@@ -1,0 +1,23 @@
+@import "./variables";
+
+/************************************************************
+* MAILCHIMP EMBED FORM
+*************************************************************/
+
+#mc_embed_signup{
+  input{
+    font-size: 18px;
+  }
+  input[type="email"]{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border-color: white;
+    margin-bottom: 15px;
+  }
+  input[type="submit"]{
+    border-color: white;
+    background: transparent;
+    color: white;
+  }
+}
