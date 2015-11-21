@@ -19,6 +19,8 @@ The code in this example is written using:
 - Angular v2.0.0-alpha.46
 - Component Router v2.0.0-alpha.46
 
+The entire source code is available [here](http://plnkr.co/edit/f2SM6AVJTBjL77j81jEA?p=preview).
+
 # Let's get started
 
 ## Loading Component Router
@@ -29,7 +31,7 @@ First we load the Component Router library in the `head` section of our applicat
 <script src="https://code.angularjs.org/2.0.0-alpha.46/router.dev.js"></script>
 {% endhighlight %}
 
-and then we tell Angular to add the router to its dependency injection system:
+then we tell Angular to add the router to its dependency injection system:
 
 {% highlight javascript %}
 // Import Angular dependencies
