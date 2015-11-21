@@ -21,8 +21,7 @@ To use sample content in an example, simply make a component with a `templateUrl
 })
 export class AboutCmp {
 }
-```feat
-
+```
 
 ## Development
 
