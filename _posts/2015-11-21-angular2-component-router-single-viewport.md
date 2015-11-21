@@ -33,11 +33,15 @@ Here is a preview of what we will be building:
 
 First we load the Component Router library in the `head` section of our application:
 
+<aside class="rbe-aside-filename">index.html</aside>
+
 {% highlight javascript %}
 <script src="https://code.angularjs.org/2.0.0-alpha.46/router.dev.js"></script>
 {% endhighlight %}
 
 When bootstrapping Angular, we tell it to add the router to its dependency injection system:
+
+<aside class="rbe-aside-filename">main.ts</aside>
 
 {% highlight javascript %}
 // Import Angular dependencies
