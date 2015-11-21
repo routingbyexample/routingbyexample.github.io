@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to create a single viewport using Angular and Component Router"
+title:  "An introduction to Component Router"
 date:   2015-11-21 00:00:00
 categories: angular2 component-router
 tags: angular angular2 component-router
