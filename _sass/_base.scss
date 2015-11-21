@@ -34,10 +34,13 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure{
   margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: 1em;
 }
 
 a{
@@ -51,6 +54,12 @@ a{
   background-position: 0 1.35em;
 }
 
-p+p{
-  margin-top: 2em;
+// Add good amount of margin to create easy-to-read text
+p{
+  margin-bottom: 2em;
+}
+
+// Put lists a little closer to text
+p+ul, p+ol{
+  margin-top: -1em;
 }
