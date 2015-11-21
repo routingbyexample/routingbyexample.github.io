@@ -11,7 +11,7 @@ tags: angular angular2 component-router
 In this example you will learn:
 
 - how to load Component Router in your Angular application
-- what a `router-outlet` is
+- how to use `router-outlet` to tell the router where to insert content
 - how to map routes to Angular components
 
 The code in this example is written using:
@@ -20,6 +20,12 @@ The code in this example is written using:
 - Component Router v2.0.0-alpha.46
 
 The entire source code is available [here](http://plnkr.co/edit/f2SM6AVJTBjL77j81jEA?p=preview).
+
+# Preview
+
+Here is a preview of what we will be building:
+
+<iframe class="rbe-iframe--plunk" src="http://embed.plnkr.co/f2SM6AVJTBjL77j81jEA/preview"></iframe>
 
 # Let's get started
 
@@ -31,7 +37,7 @@ First we load the Component Router library in the `head` section of our applicat
 <script src="https://code.angularjs.org/2.0.0-alpha.46/router.dev.js"></script>
 {% endhighlight %}
 
-then we tell Angular to add the router to its dependency injection system:
+When bootstrapping Angular, we tell it to add the router to its dependency injection system:
 
 {% highlight javascript %}
 // Import Angular dependencies
