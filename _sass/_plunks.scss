@@ -7,3 +7,26 @@
 .rbe-plunk{
   padding: 15px;
 }
+
+.rbe-plunk-nav{
+  ul{
+    margin: 0 0 60px -30px;
+    text-align: right;
+    li{
+      display: inline-block;
+      margin: 0 0 0 30px;
+      a{
+        font-family: $rbe-font-sans-serif;
+        text-transform: uppercase;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+        background: none;
+        color: rgba(0,0,0,0.5);
+        &.router-link-active, &.active{
+          color: black;
+        }
+      }
+    }
+  }
+}
