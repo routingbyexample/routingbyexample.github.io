@@ -14,7 +14,8 @@ In this example you will learn:
 
 - how to load Component Router in your Angular application
 - how to use `router-outlet` to tell the router where to insert content
-- how to map routes to Angular components
+- how to use `router-link` to activate routes
+- how to map routes to Angular components using the `@RouteConfig` decorator
 
 The code in this example is written using:
 
