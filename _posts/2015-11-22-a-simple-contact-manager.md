@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A simple master-detail contact manager"
+title:  "A simple master/detail contact manager"
 date:   2015-11-22 00:00:00
 categories: angular2 component-router
 tags: angular angular2 component-router
