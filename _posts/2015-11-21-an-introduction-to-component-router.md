@@ -67,6 +67,31 @@ bootstrap(App, [
 ]).catch(err => console.error(err));
 {% endhighlight %}
 
+## Adding router-outlet
+
+We use `router-outlet` in our template to tell Component Router where to insert content in our application.
+
+<aside class="rbe-aside-filename">app.html</aside>
+
+{% highlight html %}
+<main>
+  <router-outlet></router-outlet>
+</main>
+{% endhighlight %}
+
+Contrary to what you may expect, Component Router does **not** insert the content in the `router-outlet` element but adds i **right behind** the `router-outlet` element:
+
+<aside class="rbe-aside-filename">app.html</aside>
+
+{% highlight html %}
+<main>
+  <router-outlet></router-outlet>
+  <!-- The router will put the content here, right after the outlet -->
+</main>
+{% endhighlight %}
+
+
+
 # Final result
 
 <iframe class="rbe-iframe--plunk" src="http://embed.plnkr.co/f2SM6AVJTBjL77j81jEA/preview"></iframe>
