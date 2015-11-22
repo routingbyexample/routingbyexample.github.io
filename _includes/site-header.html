@@ -5,10 +5,7 @@
         <a href="/" class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}">Home</a>
       </li>
       <li>
-        <a href="#" class="{% if page.url contains '/jekyll/' %}active{% endif %}">Examples</a>
-      </li>
-      <li>
-        <a href="#">About</a>
+        <a href="/about" class="{% if page.url contains '/about' %}active{% endif %}">About</a>
       </li>
     </ul>
   </nav>
