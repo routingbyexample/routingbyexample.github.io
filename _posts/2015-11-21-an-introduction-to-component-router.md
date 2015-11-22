@@ -6,7 +6,9 @@ categories: angular2 component-router
 tags: angular angular2 component-router
 ---
 
-# Goal
+In this example we use Component Router in an Angular application to navigate between two pages.
+
+# Learning objectives
 
 In this example you will learn:
 
