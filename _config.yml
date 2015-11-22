@@ -7,6 +7,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://routingbyexample.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
+create_issue_url: https://github.com/routingbyexample/routingbyexample.github.io/issues
+request_example_url: https://github.com/routingbyexample/use-cases/issues
 
 # Build settings
 markdown: kramdown
