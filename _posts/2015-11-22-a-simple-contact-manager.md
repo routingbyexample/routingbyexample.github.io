@@ -32,6 +32,6 @@ The entire source code is available [here](http://plnkr.co/edit/sWa7LpRO15YvKDu9
 
 Here is a preview of what we will be building:
 
-<iframe class="rbe-iframe--plunk" src="http://plnkr.co/edit/sWa7LpRO15YvKDu9OzW0?p=preview"></iframe>
+<iframe class="rbe-iframe--plunk" src="http://embed.plnkr.co/sWa7LpRO15YvKDu9OzW0/preview"></iframe>
 
 # Let's get started
