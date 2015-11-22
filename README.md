@@ -27,10 +27,22 @@ export class AboutCmp {
 
 ### Local development
 
+First install the GitHub pages settings:
+
+```bash
+$ bundle install
+```
+
 To start a local development server:
 
 ```bash
-$ jekyll serve
+$ bundle exec jekyll serve
+```
+
+To update the GitHub Pages settings
+
+```bash
+$ bundle update
 ```
 
 ### Livereload
