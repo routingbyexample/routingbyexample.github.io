@@ -5,7 +5,7 @@ date:   2015-11-21 00:00:00
 categories: angular2 component-router
 tags: angular angular2 component-router
 number: 1
-minutes: 8
+minutes: 5
 ---
 
 This first example is a short introduction to Component Router just to get your feet wet. In later examples we will dive into extreme details, but it's important to cover the basics first.
