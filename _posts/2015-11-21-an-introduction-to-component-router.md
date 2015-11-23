@@ -8,7 +8,12 @@ number: 1
 minutes: 8
 ---
 
-In this example we use Component Router in an Angular application to navigate between two pages.
+This first example is a short introduction to Component Router just to get your feet wet. In later examples we will dive into extreme details, but it's important to cover the basics first.
+
+We will build a simple Angular 2 application that contains a header bar with 2 links. Each link instructs Component Router to display a specific component:
+
+- `/`: display `HomepageComponent`
+- `/about`: display `AboutComponent`
 
 # Learning objectives
 
