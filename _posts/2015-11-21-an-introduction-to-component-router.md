@@ -69,6 +69,35 @@ bootstrap(App, [
 ]).catch(err => console.error(err));
 {% endhighlight %}
 
+## Configure the routes
+
+Now that Component Router has been loaded, we need to tell it which routes we want to map to which components.
+
+We can do this using the `@RouteConfig` decorator:
+
+<aside class="rbe-aside-filename">app.component.ts</aside>
+
+{% highlight javascript %}
+@RouteConfig([
+  {path: '/', component: HomepageComponent, as: 'Homepage'},
+  {path: '/about', component: AboutComponent, as: 'About'}
+])
+{% endhighlight %}
+
+`@RouteConfig` is a component decorator that allows us to send an array of route definitions to Component Router.
+
+Let's zoom in on one of the route definitions:
+
+{% highlight javascript %}
+{path: '/', component: HomepageComponent, as: 'Homepage'}
+{% endhighlight %}
+
+This tells Component router:
+
+- when the url in the browser changes to `/`, load the `HomepageComponent` component
+- export the route as `Homepage` so we can activate it using a string `Homepage`
+- when the route `Homepage` is activated programmatically, update the browser url to `/`
+
 ## Adding router-outlet
 
 We use `router-outlet` in our template to tell Component Router where to insert content in our application.
