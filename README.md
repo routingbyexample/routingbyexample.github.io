@@ -1,6 +1,6 @@
 # Routing By Example
 
-This repository contains the source of [http://routingybexample.com](http://routingybexample.com).
+This repository contains the source of [http://routingbyexample.com](http://routingbyexample.com).
 
 
 ## Sample content
