@@ -8,7 +8,10 @@ number: 2
 minutes: 5
 ---
 
-In this example we use Component Router to create a simple contact manager.
+In this example we use Component Router to create a simple contact manager that uses 2 routes:
+
+- `/`: display list of contacts
+- `detail/:id`: display form to edit contact with id `id`
 
 # Learning objectives
 
