@@ -95,12 +95,14 @@ Let's zoom in on one of the route definitions:
 This tells Component router:
 
 - when the url in the browser changes to `/`, load the `HomepageComponent` component
-- export the route as `Homepage` so we can activate it using a string `Homepage`
+- export the route as `Homepage` so we can activate the route programmatically using a string `Homepage`
 - when the route `Homepage` is activated programmatically, update the browser url to `/`
 
-## Adding router-outlet
+## Configure the viewport
 
-We use `router-outlet` in our template to tell Component Router where to insert content in our application.
+Now that we told Component Router **what** to render, it's time to tell it **where** we want it to render the component.
+
+We do that by adding the `router-outlet` element to our template:
 
 <aside class="rbe-aside-filename">app.html</aside>
 
@@ -110,9 +112,7 @@ We use `router-outlet` in our template to tell Component Router where to insert 
 </main>
 {% endhighlight %}
 
-Contrary to what you may expect, Component Router does **not** insert the content in the `router-outlet` element but adds i **right behind** the `router-outlet` element:
-
-<aside class="rbe-aside-filename">app.html</aside>
+Contrary to what you may expect, Component Router does **not** insert the content in the `router-outlet` element but adds it **right behind** the `router-outlet` element:
 
 {% highlight html %}
 <main>
@@ -121,7 +121,34 @@ Contrary to what you may expect, Component Router does **not** insert the conten
 </main>
 {% endhighlight %}
 
+## Add links to activate routes
 
+Finally we add a navigation bar with links to activate the different routes from within our template.
+
+We use the `router-link` directive on our HTML anchor links to activate routes:
+
+<aside class="rbe-aside-filename">app.html</aside>
+
+{% highlight html %}
+<ul>
+  <li>
+    <a [router-link]="['/Homepage']">Homepage</a>
+  </li>
+  <li>
+    <a [router-link]="['/About']">About</a>
+  </li>
+</ul>
+{% endhighlight %}
+
+The `router-link` directive accepts an array of instructions.
+
+In later examples we will dive deeply into the meaning of the array. For now we just need to pass a string with the route name we want to activate:
+
+{% highlight html %}
+<a [router-link]="['/Homepage']">Homepage</a>
+{% endhighlight %}
+
+When clicked, this will activate the route called `Homepage`, which is a route we configured earlier using the `@RouteConfig` decorator.
 
 # Final result
 
