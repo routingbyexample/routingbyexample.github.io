@@ -1,7 +1,16 @@
 <div class="rbe-example-card">
     <div class="rbe-example-card__image">
         <a href="{{ post.url | prepend: include.example.baseurl }}">
-            <img src="http://lorempixel.com/500/300/" alt="" />
+            <figure class="rbe-figure rbe-figure--overlay-caption">
+                <img src="http://lorempixel.com/500/300/" alt="">
+                <figcaption>
+                    {% if include.example.minutes == 1 %}
+                    <h2>{{ include.example.minutes }} minute</h2>
+                    {% else %}
+                    <h2>{{ include.example.minutes }} minutes</h2>
+                    {% endif %}
+                </figcaption>
+            </figure>
         </a>
     </div>
     <div class="rbe-example-card__date">
@@ -9,7 +18,7 @@
     </div>
     <div class="rbe-example-card__title">
         <a href="{{ post.url | prepend: include.example.baseurl }}">
-            {{ include.example.title }}
+            #{{ include.example.number }}: {{ include.example.title }}
         </a>
     </div>
 </div>
