@@ -39,9 +39,9 @@ Here is a preview of what we will be building:
 
 # Let's get started
 
-## Loading Component Router
+## Load Component Router
 
-First we load the Component Router library in the `head` section of our application:
+Before we can start using Component Router, we need to load it in the `head` section of our application:
 
 <aside class="rbe-aside-filename">index.html</aside>
 
@@ -49,7 +49,7 @@ First we load the Component Router library in the `head` section of our applicat
 <script src="https://code.angularjs.org/2.0.0-alpha.46/router.dev.js"></script>
 {% endhighlight %}
 
-When bootstrapping Angular, we tell it to add the router to its dependency injection system:
+Next we pass the router providers to Angular's bootstrap function to make sure we can inject the router anywhere in our application:
 
 <aside class="rbe-aside-filename">main.ts</aside>
 
@@ -74,6 +74,8 @@ bootstrap(App, [
 ]).catch(err => console.error(err));
 {% endhighlight %}
 
+That's it. We have now activated Component Router. But we haven't passed it any instructions yet. So let's do that now.
+
 ## Configure the routes
 
 Now that Component Router has been loaded, we need to tell it which routes we want to map to which components.
@@ -89,7 +91,7 @@ We can do this using the `@RouteConfig` decorator:
 ])
 {% endhighlight %}
 
-`@RouteConfig` is a component decorator that allows us to send an array of route definitions to Component Router.
+`@RouteConfig` is a component decorator that we can put above any Angular component. It allows us to send an array of route definitions to Component Router.
 
 Let's zoom in on one of the route definitions:
 
@@ -97,17 +99,17 @@ Let's zoom in on one of the route definitions:
 {path: '/', component: HomepageComponent, as: 'Homepage'}
 {% endhighlight %}
 
-This tells Component router:
+This route definition tells Component Router:
 
 - when the url in the browser changes to `/`, load the `HomepageComponent` component
-- export the route as `Homepage` so we can activate the route programmatically using a string `Homepage`
+- export the route as `Homepage` so we can activate the route programmatically using the string `Homepage`
 - when the route `Homepage` is activated programmatically, update the browser url to `/`
-
-## Configure the viewport
 
 Now that we told Component Router **what** to render, it's time to tell it **where** we want it to render the component.
 
-We do that by adding the `router-outlet` element to our template:
+## Configure the viewport
+
+We tell Component Router **where** to render content by adding a `router-outlet` element to our template:
 
 <aside class="rbe-aside-filename">app.html</aside>
 
@@ -117,18 +119,33 @@ We do that by adding the `router-outlet` element to our template:
 </main>
 {% endhighlight %}
 
-Contrary to what you may expect, Component Router does **not** insert the content in the `router-outlet` element but adds it **right behind** the `router-outlet` element:
+Contrary to what you may expect, Component Router does **not** render the content inside the `router-outlet` element but **right behind** the `router-outlet` element:
 
 {% highlight html %}
 <main>
-  <router-outlet></router-outlet>
-  <!-- The router will put the content here, right after the outlet -->
+  <router-outlet>
+    <!-- the content will NOT be rendered here -->
+  </router-outlet>
+  <!-- the content will be rendered here -->
 </main>
 {% endhighlight %}
 
+Any content that you put inside `router-outlet` will remain visible:
+
+{% highlight html %}
+<main>
+  <router-outlet>
+    <!-- this will remain visible and will not disappear -->
+    Loading...
+  </router-outlet>
+</main>
+{% endhighlight %}
+
+Now that we told Component Router where to render content, let's add some links to activate different routes.
+
 ## Add links to activate routes
 
-Finally we add a navigation bar with links to activate the different routes from within our template.
+Let's add a navigation bar with links to activate the different routes from within our template.
 
 We use the `router-link` directive on our HTML anchor links to activate routes:
 
@@ -147,14 +164,18 @@ We use the `router-link` directive on our HTML anchor links to activate routes:
 
 The `router-link` directive accepts an array of instructions.
 
-In later examples we will dive deeply into the meaning of the array. For now we just need to pass a string with the route name we want to activate:
+In later examples we will dive deeply into the meaning of the array. For now we just pass an array with a single string representing the route name we want to activate:
 
 {% highlight html %}
 <a [router-link]="['/Homepage']">Homepage</a>
 {% endhighlight %}
 
-When clicked, this will activate the route called `Homepage`, which is a route we configured earlier using the `@RouteConfig` decorator.
+When clicked, the link will activate the route called `Homepage`, which is a route we configured earlier using the `@RouteConfig` decorator.
 
 # Final result
+
+The result is a very simple application with a header bar that contains 2 links.
+
+Clicking a link updates the content accordingly:
 
 <iframe class="rbe-iframe--plunk" src="http://embed.plnkr.co/f2SM6AVJTBjL77j81jEA/preview"></iframe>
