@@ -3,3 +3,9 @@ layout: default
 ---
 
 {% include components/example-post/example-post.html example=page content=content %}
+
+
+{% if page.next.url %}
+<h1>Want to learn more?</h1>
+<p>Why don't you check out the next example: <a href="{{page.next.url}}">{{page.next.title}}</a></p>
+{% endif %}
