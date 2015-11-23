@@ -5,7 +5,7 @@ date:   2015-11-22 00:00:00
 categories: angular2 component-router
 tags: angular angular2 component-router
 number: 2
-minutes: 5
+minutes: 6
 ---
 
 In this example we use Component Router to create a simple contact manager that uses 2 routes:

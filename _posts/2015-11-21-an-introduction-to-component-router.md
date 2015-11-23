@@ -5,7 +5,7 @@ date:   2015-11-21 00:00:00
 categories: angular2 component-router
 tags: angular angular2 component-router
 number: 1
-minutes: 5
+minutes: 8
 ---
 
 In this example we use Component Router in an Angular application to navigate between two pages.
